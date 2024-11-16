@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floricultura Rauch</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <link rel="shortcut icon" href="favicons/favicon-16x16.png" type="image/x-icon">
+    
+</head>
+<body onresize="mudouTamanho()">
+    <header >
+           
+                <img class="img-cabeca" src="cabeçalho/marca 90px.png" alt=""> 
+            
+
+            <i onclick="clickMenu()" id="burguer" class="material-icons">menu</i>
+            <menu id="itens">
+                <ul style="list-style: none;">
+                    <li><a class="myLinks" href="#">Home</a></li>
+                    <li><a class="myLinks" href="#contato">Contato</a></li>
+                    <li><a class="myLinks" href="#catalog">Catálogo</a></li>
+                    <li><a class="myLinks" target="_blank" href="https://www.instagram.com/floriculturarauch">Instagram</a></li>
+                    <li><a class="myLinks" target="_blank" href="https://www.facebook.com/profile.php?id=61561144930049&locale=pt_BR/">Facebook</a></li>
+                    <li><a class="myLinks" target="_blank" href="https://wa.me/5542999952105">WhatsApp</a></li>
+                </ul>
+            </menu>
+
+    </header>
+           
+    <div class="elemento"> 
+        <span class="hours element-blink">Atendimento 24 horas</span>
+    </div>
+
+    <div class="pai-todos">
+        <div id="pai" class="parttner">
+            <h1 class="divh1">Quem Somos ?</h1>
+            <span class="span">Bem Vindos a  Floricultura Rauch!</span>
+            <div class="texto">
+                <p class="primeiro">Estamos há mais de 20 anos no mercado  de Ponta Grossa e Região.
+                    Entregando qualidade em nossa especialidade que são Coroas Fúnebres.
+                   <br> Atendimento 24 horas para melhor servir aos nossos clientes que,  procuram prestar uma última homenagem.
+                    Trabalhamos com flores naturais, entregando o melhor resultado.
+                </p>
+            </div>
+            
+        </div>
+        
+        <div>
+            <picture>
+                    <source  media="(max-width:600px )" srcset="capas/logo-300px-fundo-removido.png">
+                    <img class="img-topo" src="capas/logomarca-400px-fundo-removido.png" alt="">
+            </picture>
+        </div>
+    </div>
+
+    <div class="h2">
+        <h2>Conheça Nosso Catálogo</h2>
+    </div>
+
+    <div id="catalog" class="catalogo">
+
+    <div class="hidden foto1">
+       
+                <img class="img" style="max-width: 300px;  height: 440px;" src="images-flowers/home/300.jpeg" alt="">
+       
+        <h2>Valor: R$300,00</h2>
+        <div class="whats"><a target="_blank" class="whatts" href="https://wa.me/5542999952105">WhatsApp</a></div>
+    </div>
+            
+    <div class="hidden foto2">
+       
+                <img style="max-width: 300px;  height: 440px;" class="img" src="images-flowers/home/400.png" alt="">
+        
+        <h2>Valor: R$400,00</h2>
+            <div class="whats"><a target="_blank" class="whatts" href="https://wa.me/5542999952105">WhatsApp</a></div>
+    </div>
+            
+    <div class="hidden foto3">
+        
+           
+               <img style="max-width: 300px; height: 440px; " class="img" src="images-flowers/home/500.png" alt="">
+           
+        
+        <h2>Valor: R$500,00</h2>
+                <div class="whats"><a target="_blank" class="whatts" href="https://wa.me/5542999952105">WhatsApp</a></div>
+    </div>
+
+        <div class="space">
+            <h2 class="h2 espace">Outras opções de valores e modelos a combinar</h2>
+        </div>
+    </div>
+
+        
+
+    <div class="div-album">
+        <h2>Disponibilizamos de outros Modelos</h2>
+    </div>
+
+    <div class="album">
+
+            <div class="pai parttner1">
+
+                <div class="filho filho1 img" >
+                   <p><img  style=" max-width: 300px; height: 440px;" src="images-flowers/coroa1.png" alt=""></p>
+                </div>
+                <div class="links-next">
+                <a class="links" href="models.html">Confira Outros Modelos</a>
+             </div>
+            </div>
+
+        <div class="pai parttner2">
+
+            <div class="filho filho2 img">
+              <p><img style="max-width: 300px; height: 440px;" src="images-flowers/coroa4.png" alt=""></p>
+            </div>
+            <div class="links-next">
+                <a class="links" href="models.html">Confira Outros Modelos</a>
+             </div>
+        </div>
+
+        <div class="pai parttner3">
+
+            <div class="filho filho3 img">
+               <p><img style="max-width: 300px; height: 440px;"  src="images-flowers/coroa7.png" alt=""></p>
+            </div>
+            <div class="links-next">
+                <a class="links" href="models.html">Confira Outros Modelos</a>
+             </div>
+        </div>
+
+                
+    </div>
+
+    <form  id="contato" action="https://api.staticforms.xyz/submit" method="post">
+        <div class="formulario">
+           <div class="form">
+               <legend>Dúvidas ? Deixe sua mensagem</legend>
+                 <p class="p1">
+                   <label class="p1 label" style="color: white;" for="size1">Seu Email:</label>
+                    <input required style="outline: none;" type="email" name="email" id="txt" placeholder="Digite seu Email">
+                </p>
+                <p>
+                    <label style="color: white;" for="size1">Seu Contato:</label>
+                    <input required style="outline: none;" type="number" name="phone" id="txt" placeholder="Digite seu Contato com o DDD">
+               </p>
+                <p>
+                    <label style="color: white;" for="size1">Seu Nome:</label>
+                    <input required style="outline: none;" type="text" name="name" id="txt" placeholder="Digite seu Nome">
+               </p>
+               
+              
+                  
+                 <textarea required style="outline: none;" placeholder="Deixe sua mensagem"  name="message" id="story" rows="10" cols="93"></textarea> 
+                <div class="send"><button id="btn" type="submit">Enviar</button></div>
+                   
+            </div>
+            
+        </div>
+
+        
+        <input type="hidden" name="accessKey" value="afaf119d-cfc4-4eb4-a4c2-8cf6925bb2fc">
+        <input type="hidden" name="redirectTo" value="index.html">
+        
+    </form>
+
+    <footer >
+        <div class="div-footer">
+           <div class="redes">
+               <img class="email" src="redes/Email.png" alt=""> floriculturarauch@gmail.com
+           </div>
+
+           <div target="_blank" class="redes">
+               <img src="redes/Facebook.png" alt=""><a class="linkFacebook" target="_blank" href="https://www.facebook.com/profile.php?id=61561144930049&locale=pt_BR/">Floricultura Rauch</a>
+           </div>
+
+           <div class="redes">
+                <img src="redes/instagram.png" alt=""> <a class="linkFacebook" target="_blank" href="https://www.instagram.com/floriculturarauch">@floriculturarauch</a>
+          </div>
+
+          <div class="redes"> 
+            <img src="redes/WhatsApp35px.png" alt=""> <a class="linkFacebook" target="_blank" href="https://wa.me/5542999952105">(42) 9 9995-2105</a>
+          </div>
+
+          <div class="redes">
+                <img src="redes/Phone.png" alt=""> (42) 3028-3412
+          </div>
+
+          <div class="direitos-autorais">
+                &copy; Todos os direitos autorais reservados <br>
+                 <span class="floricultura">Floricultura Rauch 2024</span>
+          </div>
+       </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>

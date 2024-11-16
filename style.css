@@ -1,0 +1,377 @@
+@charset "UTF-8";
+
+:root{
+    --verde:(#36594F);
+    --verde2:(#2F4A45);
+    --verde3:(#3E534E);
+    --vermelho:(#BF244E);
+    --dourado:(#A68953);
+    --background:(#D9D4C1);
+    --album:(#FBF3EE);
+    --corbase:(#0000);
+    --corbase2:(#ffff);
+    --corbase:(gray);
+}
+
+html, body{
+   overflow-x: hidden;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100vw;
+    background-color: #4d6963;
+    position: sticky;
+    top: 0;
+}
+
+menu > ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   
+}
+
+i#burguer{
+    color: white;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+   
+    
+}
+
+
+menu{
+    display: none;
+}
+
+.img-cabeca{
+    padding-top: 6px;
+    border-radius: 50%;
+    padding-bottom: 6px;
+    margin-left: 6px;
+}
+
+body{
+    background-color: #FFF9F1;
+}
+
+a{
+    text-decoration: none;
+    color:white ;
+    margin-left: 30px;
+    padding-top: 12px;
+}
+
+.myLinks:hover{
+    border-bottom: 4px solid white;
+    transition-duration: 0.3s;
+    color: rgba(230, 213, 213, 0.863);
+}
+
+.pai-todos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap ;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.img-topo{
+    padding-top: 15px;
+   
+}
+
+
+.span-quem-somos, .span{
+    font-size: 23px;
+    padding-bottom: 20px;
+    margin-left: 20px;
+    color: #4d6963;
+    text-align: center;
+}
+
+h1{
+    margin-left: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color:  #4d6963;  
+}
+
+p{
+    margin-left: 20px;
+    color:  #4d6963;
+}
+
+.hours{
+    color:  #4d6963;
+    font-size: 60px;
+   
+    text-decoration: underline;
+}
+
+.elemento{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.primeiro{
+    margin-top: 10px;
+}
+
+.ultimo{
+    padding-bottom: 10px;
+}
+
+.catalogo{ 
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.h2{
+    text-align: center;
+    color: #4d6963;
+    
+    text-decoration: underline;
+}
+
+.hidden{
+    background-color: #2F4A45;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hidden > h2{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.hidden:hover{
+    cursor: pointer;
+    background-color: #36594F;
+    transition: 3s;
+}
+.album{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 100px;
+}
+
+.div-album{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.div-album > h2{
+    color: #4d6963;
+    text-decoration: underline;
+}
+
+.pai{
+    background-color: #2F4A45;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.element-blink{
+    animation: blink 1.5s infinite;
+}
+
+@keyframes blink{
+    0%{
+        opacity: 1;
+    }
+
+    50%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+.p-img{
+    color: white;
+    padding-top: 10px;
+}
+
+.div-footer{
+    display: flex;
+    gap: 30px;
+    color: white;
+}
+
+
+.son{
+   padding-top: 8px;
+}
+
+.whats{
+    text-align: center;
+    margin-right: 30px;
+}
+
+.whatts{
+    background-color: white;
+    color: #2F4A45;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.whatts:hover{
+    color: white;
+    
+    background-color: #4d6963;
+    transition-duration: 1s;
+}
+
+.pai:hover{
+    cursor: pointer;
+    background-color: #36594F;
+}
+
+.redes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.div-footer{ 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    background-color: #2F4A45;
+    height: 450px; 
+    padding-top: 60px;
+    padding-bottom: 90px;
+}
+
+.h24{
+    position: fixed;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.top:hover{
+    cursor: pointer;
+}
+
+
+.floricultura{
+    margin-left: 62px;
+}
+
+.links{
+    padding: 10px;
+    border-radius: 10px;
+    color: #2F4A45;
+    background-color: white;
+}
+
+.links-next{
+    margin: 30px;
+}
+
+.links:hover{
+    background-color: #4d6963;
+    color: white;
+}
+
+.img{
+    padding-top: 30px;
+    
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario > div{
+    background-color: #36594F;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    padding-right: 30px;
+    border-radius: 20px;
+}
+
+legend{
+    color: white;
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    
+}
+
+label{
+    display: flex;
+    text-align: center;
+}
+
+input{
+    width: 50vw;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 15px;
+}
+textarea{
+    margin-left: 20px;
+    margin-top: 20px;
+    padding: 8px;
+    border-radius: 15px;
+}
+
+form button{
+    padding: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    margin-bottom: 20px;
+    margin-top: 6px;
+    margin-left: 20px;
+    width: 200px;
+}
+
+.linkFacebook{
+    margin: -4px;
+    text-decoration: underline;
+}
